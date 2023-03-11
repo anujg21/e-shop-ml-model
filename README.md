@@ -21,6 +21,7 @@ The CRISP-DM method is a structured approach to data analysis and can be applied
 The dataset you will use comes from the [Kaggle E-shop Clothing Dataset](https://www.kaggle.com/datasets/adityawisnugrahas/eshop-clothing-dataset).
 
 ### EDA Report
+Refer to [EDA Report](https://github.com/anujg21/e-shop-ml-model/blob/main/Capstone.ipynb) Univariate, Bivariate, and Multivariate sections of notebook for detailed analysis. 
 * Strong positive correlation between month and session ID (0.97)
 * Price and price 2 seems to share negative correlation (-0.74). But why there is negative relation, I'm unsure for now.
 * price and page 1 (main category) negative relation.

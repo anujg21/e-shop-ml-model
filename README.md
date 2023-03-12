@@ -21,7 +21,6 @@ The CRISP-DM method is a structured approach to data analysis and can be applied
 The dataset you will use comes from the [Kaggle E-shop Clothing Dataset](https://www.kaggle.com/datasets/adityawisnugrahas/eshop-clothing-dataset).
 
 ### EDA Report
-Refer to [EDA Report](https://github.com/anujg21/e-shop-ml-model/blob/main/Capstone.ipynb) Univariate, Bivariate, and Multivariate sections of notebook for detailed analysis. 
 * Strong positive correlation between month and session ID (0.97)
 * Price and price 2 seems to share negative correlation (-0.74). But why there is negative relation, I'm unsure for now.
 * price and page 1 (main category) negative relation.
@@ -47,5 +46,24 @@ It comprises of many steps but remember to transform the data using the techique
 * Normalization scales the data to be in the range of [0,1]. This is done by subtracting the minimum value of the feature and dividing it by the range of the feature.
 * Standardization scales the data to have a mean of 0 and a standard deviation of 1. This is done by subtracting the mean of the feature and dividing it by the standard deviation of the feature.
 * Both normalization and standardization are used to bring all the features to the same scale. This is important as KNN, and Logistic Regression models are sensitive to the scale of the features and can lead to incorrect predictions if features are on a different scale.
-You can use the StandardScaler class from scikit-learn's preprocessing module to standardize your data. For normalization, you can use the MinMaxScaler class from the same module.
+* Use the StandardScaler class from scikit-learn's preprocessing module to standardize your data. For normalization, you can use the MinMaxScaler class from the same module.
+* Label Encoding is a transformation technique in scikit-learn library that is used to convert categorical data into numerical format. It assigns a unique integer value to each category in a categorical feature column. 
 
+#### Conclusion 
+##### Regression 
+* Mean Squared Error (MSE): The average squared difference between the predicted and actual values is 33.55. This value is sensitive to outliers, and a higher value indicates a worse fit.
+
+* Root Mean Squared Error (RMSE): The square root of the MSE is 6.92, which is a more interpretable measure of the model's performance. This means that the predicted values have an average deviation of approximately 6.92 units from the actual values.
+
+* R-squared (R2) Score: This metric ranges from 0 to 1, where 1 indicates a perfect fit. The R2 score of 0.79 indicates that approximately 79% of the variability in the target variable can be explained by the Ridge regression model.
+
+* Mean Absolute Error (MAE): The average absolute difference between the predicted and actual values is 4.38. This value is less sensitive to outliers compared to the MSE.
+
+* Test Score and Train Score: These scores indicate the goodness of fit of the model on the training and test datasets, respectively. The values of 0.79 for both scores suggest that the model is performing relatively well on both the training and test datasets.
+
+* Compared to the Lasso regression model, the Ridge regression model has a lower MSE, RMSE, and MAE, and a higher R2 score, indicating that the model may be more accurate in predicting the target variable. Additionally, the Ridge regression model may be more appropriate if there are many predictor variables that are all important to the model, as it can help with regularization by shrinking the coefficients of all predictors, but not to zero like the Lasso regression.
+##### Classification 
+
+* Looking at the metrics, we can see that all three models have high accuracy scores on both the training and test sets, indicating that they perform well on the given data. The precision, recall, and F1-score are also high for all three models, indicating that they have good performance in terms of correctly identifying the positive instances.
+
+* The KNN model has the highest accuracy score on the test set, but it also took the longest time to train compared to the other models. The SVC model has the highest precision score, indicating that it has the lowest rate of false positives. The Logistic Regression model has the lowest precision score, but it has the fastest training time.

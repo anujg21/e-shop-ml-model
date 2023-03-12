@@ -49,6 +49,11 @@ It comprises of many steps but remember to transform the data using the techique
 * Use the StandardScaler class from scikit-learn's preprocessing module to standardize your data. For normalization, you can use the MinMaxScaler class from the same module.
 * Label Encoding is a transformation technique in scikit-learn library that is used to convert categorical data into numerical format. It assigns a unique integer value to each category in a categorical feature column. 
 
+### Modeling 
+Commpare Regression and Classification model. 
+Linear Regression, Lasso and Ridge. 
+Logistic Classification, KNN and SVC. 
+
 ### Conclusion 
 #### Regression 
 * Mean Squared Error (MSE): The average squared difference between the predicted and actual values is 33.55. This value is sensitive to outliers, and a higher value indicates a worse fit.

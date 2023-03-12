@@ -20,7 +20,8 @@ The CRISP-DM method is a structured approach to data analysis and can be applied
 ### Data
 The dataset you will use comes from the [Kaggle E-shop Clothing Dataset](https://www.kaggle.com/datasets/adityawisnugrahas/eshop-clothing-dataset).
 
-### EDA Report [eshop-notebook](https://github.com/anujg21/e-shop-ml-model/blob/main/Capstone.ipynb)
+### EDA Report 
+[eshop-notebook](https://github.com/anujg21/e-shop-ml-model/blob/main/Capstone.ipynb)<br>
 * Strong positive correlation between month and session ID (0.97)
 * Price and price 2 seems to share negative correlation (-0.74). But why there is negative relation, I'm unsure for now.
 * price and page 1 (main category) negative relation.
@@ -41,7 +42,8 @@ The dataset you will use comes from the [Kaggle E-shop Clothing Dataset](https:/
 * No missing value. The data seems pretty good.
 * The data appears to have a relatively even distribution and there are no outliers present.
 
-### Data Preparation [eshop-notebook](https://github.com/anujg21/e-shop-ml-model/blob/main/Capstone.ipynb)
+### Data Preparation 
+[eshop-notebook](https://github.com/anujg21/e-shop-ml-model/blob/main/Capstone.ipynb)<br><br>
 It comprises of many steps but remember to transform the data using the techiques in hand. 
 * Normalization scales the data to be in the range of [0,1]. This is done by subtracting the minimum value of the feature and dividing it by the range of the feature.
 * Standardization scales the data to have a mean of 0 and a standard deviation of 1. This is done by subtracting the mean of the feature and dividing it by the standard deviation of the feature.
@@ -49,12 +51,15 @@ It comprises of many steps but remember to transform the data using the techique
 * Use the StandardScaler class from scikit-learn's preprocessing module to standardize your data. For normalization, you can use the MinMaxScaler class from the same module.
 * Label Encoding is a transformation technique in scikit-learn library that is used to convert categorical data into numerical format. It assigns a unique integer value to each category in a categorical feature column. 
 
-### Modeling [eshop-notebook](https://github.com/anujg21/e-shop-ml-model/blob/main/Capstone.ipynb)
+### Modeling 
+[eshop-notebook](https://github.com/anujg21/e-shop-ml-model/blob/main/Capstone.ipynb)<br><br>
 Commpare Regression and Classification model. 
 Linear Regression, Lasso and Ridge. 
 Logistic Classification, KNN and SVC. 
 
-### Conclusion [eshop-notebook](https://github.com/anujg21/e-shop-ml-model/blob/main/Capstone.ipynb)
+### Conclusion 
+[eshop-notebook](https://github.com/anujg21/e-shop-ml-model/blob/main/Capstone.ipynb)<br>
+[read non-technical writeup](https://github.com/anujg21/e-shop-ml-model/blob/main/non-technical-writeup.md)<br>
 #### Regression 
 * Mean Squared Error (MSE): The average squared difference between the predicted and actual values is 33.55. This value is sensitive to outliers, and a higher value indicates a worse fit.
 

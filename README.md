@@ -41,7 +41,7 @@ The dataset you will use comes from the [Kaggle E-shop Clothing Dataset](https:/
 * No missing value. The data seems pretty good.
 * The data appears to have a relatively even distribution and there are no outliers present.
 
-#### Data Preparation 
+### Data Preparation 
 It comprises of many steps but remember to transform the data using the techiques in hand. 
 * Normalization scales the data to be in the range of [0,1]. This is done by subtracting the minimum value of the feature and dividing it by the range of the feature.
 * Standardization scales the data to have a mean of 0 and a standard deviation of 1. This is done by subtracting the mean of the feature and dividing it by the standard deviation of the feature.
@@ -49,8 +49,8 @@ It comprises of many steps but remember to transform the data using the techique
 * Use the StandardScaler class from scikit-learn's preprocessing module to standardize your data. For normalization, you can use the MinMaxScaler class from the same module.
 * Label Encoding is a transformation technique in scikit-learn library that is used to convert categorical data into numerical format. It assigns a unique integer value to each category in a categorical feature column. 
 
-#### Conclusion 
-##### Regression 
+### Conclusion 
+#### Regression 
 * Mean Squared Error (MSE): The average squared difference between the predicted and actual values is 33.55. This value is sensitive to outliers, and a higher value indicates a worse fit.
 
 * Root Mean Squared Error (RMSE): The square root of the MSE is 6.92, which is a more interpretable measure of the model's performance. This means that the predicted values have an average deviation of approximately 6.92 units from the actual values.
@@ -62,7 +62,7 @@ It comprises of many steps but remember to transform the data using the techique
 * Test Score and Train Score: These scores indicate the goodness of fit of the model on the training and test datasets, respectively. The values of 0.79 for both scores suggest that the model is performing relatively well on both the training and test datasets.
 
 * Compared to the Lasso regression model, the Ridge regression model has a lower MSE, RMSE, and MAE, and a higher R2 score, indicating that the model may be more accurate in predicting the target variable. Additionally, the Ridge regression model may be more appropriate if there are many predictor variables that are all important to the model, as it can help with regularization by shrinking the coefficients of all predictors, but not to zero like the Lasso regression.
-##### Classification 
+#### Classification 
 
 * Looking at the metrics, we can see that all three models have high accuracy scores on both the training and test sets, indicating that they perform well on the given data. The precision, recall, and F1-score are also high for all three models, indicating that they have good performance in terms of correctly identifying the positive instances.
 

@@ -75,4 +75,4 @@ Logistic Classification, KNN and SVC.
 
 * Looking at the metrics, we can see that all three models have high accuracy scores on both the training and test sets, indicating that they perform well on the given data. The precision, recall, and F1-score are also high for all three models, indicating that they have good performance in terms of correctly identifying the positive instances.
 
-* The KNN model has the highest accuracy score on the test set, but it also took the longest time to train compared to the other models. The SVC model has the highest precision score, indicating that it has the lowest rate of false positives. The Logistic Regression model has the lowest precision score, but it has the fastest training time.
+* The SVC model has the highest accuracy score on the test set, but it also took the longest time to train compared to the other models. The SVC model has the highest precision score, indicating that it has the lowest rate of false positives. The Logistic Regression model has the lowest precision score, but it has the fastest training time.

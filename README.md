@@ -11,7 +11,7 @@ This dataset is used for various purposes, including:
 ### Framework 
 The CRISP-DM method is a structured approach to data analysis and can be applied to analyze the online eshop dataset. Here is a brief outline of how you can use the CRISP-DM method to compare various classifiers:
 * Business Understanding: Define the problem trying to solve. In this case, the goal is trying to predict a price based on the given features. And classification model to classify whether the product is affordable or expensive?
-* Data Understanding: Load the Portuguese bank marketing dataset into a Pandas DataFrame and explore the data. This includes cleaning the data and handling any missing values.
+* Data Understanding: Load the eshop clickstream dataset into a Pandas DataFrame and explore the data. This includes cleaning the data and handling any missing values.
 * Data Preparation: Prepare the data for modeling by splitting the data into training and testing sets and converting categorical variables into numerical data using one-hot encoding.
 * Modeling: Train various classifiers using the training data and make predictions on the test data. Evaluate the performance of the models using metrics such as accuracy, precision, recall, and F1-score.
 * Evaluation: Compare classifiers' performance to determine which is better suited for the problem at hand.
